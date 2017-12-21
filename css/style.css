@@ -539,7 +539,7 @@
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 375px;
+		width: 268px;
 		height: 100%;
 		color: #fff;
 		background: #222629 url('images/overlay.png');
@@ -685,7 +685,7 @@
 	
 	#footer
 	{
-		margin-left: 375px;
+		margin-left: 268px;
 		text-align: center;
 		background-color: #dce3e2;
 		padding: 3em 0 4em 0;
@@ -721,7 +721,7 @@
 
 	#main
 	{
-		margin-left: 375px;
+		margin-left: 268px;
 	}
 	
 		#main > section
@@ -771,7 +771,7 @@
 			#main > section.one
 			{
 				background-color: #81918E;
-				background-image: url('../images/night-sky.jpg');
+				background-image: url('../images/sai3.jpg');
 			}
 
 			#main > section.two
