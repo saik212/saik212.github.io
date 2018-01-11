@@ -1,251 +1,191 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Test site</title>
+	<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-<html>
-	<head>
-		<title>Sai Kandala</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body>
+	<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" id="nav-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" id="navbar-button">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="nav-brand" href="#">Sai Kandala</a>
+    </div>
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" id="nav-links-custom">
+        <li><a href="#about" class="nav-link js-scroll-trigger">About</a></li>
+        <li><a href="#projects" class="nav-link js-scroll-trigger">Projects</a></li>
+        <li><a href="#skills" class="nav-link js-scroll-trigger">Skills</a></li>
+        <li><a href="#contact" class="nav-link js-scroll-trigger">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-				<div class="top">
+<nav class="navbar navbar-default" id="nav-side">
+  	<div class="container-fluid">
+  		<div class="col-md-12 img-profile">
+  			<div class="ratio img-responsive img-circle">
+  			</div>
+  		</div>
+  		<div class="collapse navbar-collapse">
+        <ul class="navbar-nav" id="nav-links-custom">
+          <li class="nav-item col-md-12 mb-5">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item col-md-12 mb-5">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item col-md-12 mb-5">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item col-md-12 mb-5">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-12 social-icons">
+      	<a href="www.github.com/saik212" target="_blank" class="nav-icon"><i class="fa fa-github"></i></a>
+      	<a href="www.linkedin.com/in/saikandala" target="_blank" class="nav-icon"><i class="fa fa-linkedin"></i></a>
+      	<a href="mailto:kandala.sai@gmail.com" target="_blank" class="nav-icon"><i class="fa fa-envelope"></i></a>
+      	<a href="images/Sai_Kandala_Engineering_resume.pdf" class="nav-icon"><i class="fa fa-file-text" target="_blank" ></i></a>
+      </div>
+  	</div><!-- .container-fluid -->
+	</nav>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/sai.jpeg" alt="" /></span>
-							<h1 id="title">Sai Kandala</h1>
-							<p>Software Developer</p>
-						</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								Prologue's nav expects links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
+	<!-- Content -->
+	<div class="container-fluid">
+		<section class="row res-section" id="about">
+			<div class="col-md-12 section-auto">
+				<h1 class="row primary-text mb-0">Sai Kandala</h1>
+				<div class="row mb-5 subheader">622 Timber Ridge Ct · Neptune, NJ 07753 · (732) 762-5169 · <span class="primary-text">kandala.sai@gmail.com</span></div>
+				<p class="row mb-5">I am a New York/New Jersey-based software developer with a wealth of development experience. I have a passion for programming and learning, allowing me to work in dynamic, fast-paced environments, and develop engaging experiences for users. When I'm not behind a computer screen, you can find me on the tennis courts!</p>
+			</div>
+		</section>
+			<section class="row res-section" id="skills">
+			<div class="col-md-12 section-auto">
+				<h1 class="row primary-text mb-5">Skills</h1>
+				<div class="row text-center">
+					<div class="col-md-4 mb-5">
+						<h2 class="f-1-5"><i class="fa fa-paint-brush"></i></h2>
+						<h3 class="f-1-5">Front-End</h3>
+						<p>Fundamentals in HTML5, CSS3, Javascript, and jQuery.</p>
+						<p>Knowledge and experience in frameworks including Backbone.js, React, Vue, Wordpress, and Twitter Bootstrap</p>
+					</div>
+					<div class="col-md-4 mb-5">
+						<h2 class="f-1-5"><i class="fa fa-server"></i></h2>
+						<h3 class="f-1-5">Back-End</h3>
+						<p>Experience in back-end frameworks and languages including Rails, Express.js, Node.js, Laravel, ASP.NET, Ruby, VB6, C#, and PHP.</p>
+						<p>Understanding of best practices and programming paradigms like MVC structured web applications</p>
+						<p>Deep understanding of database layer transactions and fluent in MSSQL Server, PostGRES, and MySQL</p>
+					</div>
+					<div class="col-md-4 mb-5">
+						<h2 class="f-1-5"><i class="fa fa-book"></i></h2>
+						<h3 class="f-1-5">Workflow</h3>
+						<p>Dedicated to learning and implementing best practices for scalable, maintainable code</p>
+						<p>Able to quickly learn and adapt to new, impactful technologies in the industry</p>
+						<p>Understanding of modern workflow processes including Agile workflow and software testing technologies</p>
+					</div>
+				</div>
+				<p class="row text-center">Check out my <a href="images/Sai_Kandala_Engineering_resume.pdf">resume</a> and my <a href="www.github.com/saik212">Github</a></p>
+			</div>
+		</section>
+		<section class="row res-section" id="projects">
+			<div class="col-md-12 section-auto">
+				<h1 class="row primary-text mb-5">Projects</h1>
+				<div class="row subheader mb-5">Check out some of my projects. More to come soon!</div>
+				<div class="row text-center">
+					<div class="col-md-4 mb-5">
+						<a href="www.songstorm.me" target="_blank">
+							<img class="f-1-5" src="images/songstorm1.png"></h2>
+						</a>
+						<h3 class="f-1-5">Songstorm</h3>
+						<p>A music sharing application with a Rails Backend and Backbone Frontend</p>
+						<a href="www.github.com/saik212/songstorm" class="github-project"><i class="fa fa-github"></i></a>
+					</div>
+					<div class="col-md-4 mb-5">
+						<a href="www.saikandala.com/jQuery_plugins" target="_blank">
+							<img class="f-1-5" src="images/plugins.png"></h2>
+						</a>
+						<h3 class="f-1-5">jQuery Plugins</h3>
+						<p>jQuery plugins to add visual effects; Object-Oriented design for easy use</p>
+						<a href="www.github.com/saik212/jQuery_plugins" class="github-project"><i class="fa fa-github"></i></a>
+					</div>
+						<div class="col-md-4 mb-5">
+						<a href="www.saikandala.com/space_invaders" target="_blank">
+							<img class="f-1-5" src="images/SpaceInvaders.png"></h2>
+						</a>
+						<h3 class="f-1-5">Space Invaders</h3>
+						<p>Classic Space Invaders written in Javascript and HTML5 Canvas</p>
+						<a href="www.github.com/saik212/space_invaders" class="github-project"><i class="fa fa-github"></i></a>
+					</div>
+						<div class="col-md-4 mb-5">
+						<a href="www.github.com/saik212/active_record_lite" target="_blank">
+							<img class="f-1-5" src="images/random_code.jpg"></h2>
+						</a>
+						<h3 class="f-1-5">Active Record Lite</h3>
+						<p>Metaprogramming in Ruby to implement ORM for Rails</p>
+						<a href="www.github.com/saik212/active_record_lite" class="github-project"><i class="fa fa-github"></i></a>
+					</div>
 				</div>
 				
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
-							<li><a href="http://www.linkedin.com/in/saikandala" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="http://www.github.com/saik212" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-							<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-							<li><a href="mailto:kandala.sai@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="images/resume.pdf" target="_blank" class="icon fa-file-text"><span class="label">Resume</span></a></li>
-						</ul>
-				
-				</div>
-			
 			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Sai Kandala</strong>!<br />
-								I am a New York/New Jersey-based software developer with over a year of experience in programming.</h2>
-							</header>
-							
-							<footer>
-								<a href="#portfolio" class="button scrolly">Check out my work!</a>
-							</footer>
-
-						</div>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2>Projects</h2>
-							</header>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.songstorm.me" target="_blank" class="image fit"><img src="images/songstorm2.png" alt="" /></a>
-										<header>
-											<h3>Songstorm</h3>
-											<p>A music sharing application with a Rails Backend and Backbone Frontend</p>
-											<a href="http://www.github.com/saik212/songstorm" target="_blank" class="icon fa-github"><span class="label">Github</span></a>
-										</header>
-									</article>
-									<!-- <article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article> -->
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.saikandala.com/jQuery_plugins" target="_blank" class="image fit"><img src="images/plugins.png" alt="" /></a>
-										<header>
-											<h3>jQuery Plugins</h3>
-											<p>jQuery plugins to add visual effects; Object-Oriented design for easy use</p>
-											<a href="http://www.github.com/saik212/jQuery_plugins" target="_blank" class="icon fa-github"><span class="label">Github</span></a>
-										</header>
-									</article>
-									<!-- <article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
-										</header>
-									</article> -->
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.saikandala.com/space_invaders" target="_blank" class="image fit"><img src="images/SpaceInvaders.png" alt="" /></a>
-										<header>
-											<h3>Space Invaders</h3>
-											<p>Classic Space Invaders written in Javascript and HTML5 Canvas</p>
-											<a href="http://www.github.com/saik212/space_invaders" target="_blank" class="icon fa-github"><span class="label">Github</span></a>
-										</header>
-									</article>
-									<!-- <article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>Orci Convallis</h3>
-										</header>
-									</article> -->
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="http://www.github.com/saik212/active_record_lite" target="_blank" class="image fit"><img src="images/random_code.jpg" alt="" /></a>
-										<header>
-											<h3>Active Record Lite</h3>
-											<p>Metaprogramming in Ruby to implement ORM for Rails</p>
-											<a href="http://www.github.com/saik212/active_record_lite" target="_blank" class="icon fa-github"><span class="label">Github</span></a>
-										</header>
-									</article>
-									<!-- <article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Rhoncus Semper</h3>
-										</header> -->
-									</article>
+		</section>
+	
+		<section class="row res-section" id="contact">
+			<div class="col-md-12 section-auto">
+				<h1 class="row primary-text mb-5">Contact</h1>
+				<div class="row mb-5">Shoot me a message</div>
+					<form class="contact-form" action="https://formspree.io/kandala.sai@gmail.com" method="POST">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group mb-3 mr-3">
+									<label for="username">Name: </label>
+									<input class="form-control" type="text" name="username" placeholder="Your name">
 								</div>
 							</div>
-
-						</div>
-					</section>
-
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
-
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<span class="image featured"><img id="about-me-img" src="images/sai.jpeg" alt="" /></span>
-							
-							<p>I'm a software developer with an extensive history in programming. <br>When I'm not behind a computer, you can find me at the tennis courts!</p>
-
-							<p>I'm fluent with the following technologies:</p>
-							<div style="width:100%" class="4u">
-								<img style="width:128px;height:128px" src="images/rails.png" title="Ruby on Rails">
-								<img style="width:128px;height:128px" src="images/backbone.png" title="Backbone.js">
-								<img style="width:128px;height:128px" src="images/js.png"  title="Javascript">
-								<img style="width:128px;height:128px" src="images/html.png" title="HTML5">
-								<img style="width:128px;height:128px" src="images/css3.png" title="CSS3">
-								<img style="width:128px;height:128px" src="images/jquery.png" title="jQuery">
-								<img style="width:128px;height:128px" src="images/ruby2.png" title="Ruby">
-								<img style="width:128px;height:128px" src="images/postgres.png" title="PostgreSQL">
-								<img style="width:128px;height:128px" src="images/git.png" title="Git">
-								<img style="width:128px;height:128px" src="images/rspec.png" title="Rspec">
+							<div class="col-md-6">
+								<div class="form-group mb-3 mr-3">
+									<label for="email">Email: </label>
+									<input class="form-control" type="email" name="email" placeholder="Your email">
+								</div>
 							</div>
-							<p>Check out my <a href="http://www.github.com/saik212" target="_blank">Github</a> and <a href="images/resume.pdf" target="_blank">Resume</a>.</p>
-
+							<div class="col-md-12">
+								<div class="form-group email-message">
+									<label for="message">Message: </label>
+									<textarea class="form-control" name="message" rows="4" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<button type="submit" class="btn btn-submit">Submit</button>
+							</div>
 						</div>
-					</section>
-			
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>You can contact me through the following means:</p>
-							<p>LinkedIn: <a href="http://www.linkedin.com/in/saikandala" target="_blank">http://www.linkedin.com/in/saikandala</a></p>
-							<p>Email: <a href="mailto:kandala.sai@gmail.com">kandala.sai@gmail.com</a></p>
-							
-							<!-- <form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form> -->
-
-						</div>
-					</section>
-			
+					</form>
 			</div>
+		</section>				
+	</div>
 
-		<!-- Footer -->
-			<div id="footer">
-				
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Cool guy Sai guy</li>
-					</ul>
-				
-			</div>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script><script src="https://use.fontawesome.com/06f2663acb.js"></script>
+<script src="port.js"></script>
 
-	</body>
+</body>
 </html>
